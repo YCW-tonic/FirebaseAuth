@@ -26,10 +26,10 @@ class ApiFunc {
 
     fun getAssembly(para: HttpAssemblyGetPara, callback: Callback) {
         Log.e(mTAG, "ApiFunc->getReceipt")
-        postWithParaPJsonStrandTimeOut(apiStrGetAssemblyCount, para.x, para.y, callback)
+        postWithParaStrandTimeOut(apiStrGetAssemblyCount, para.x, para.y, callback)
 
     }
-    private fun postWithParaPJsonStrandTimeOut(url: String, x: String, y: Int, callback: Callback) {
+    private fun postWithParaStrandTimeOut(url: String, x: String, y: Int, callback: Callback) {
         Log.e(mTAG, "->postWithParaPJsonStrandTimeOut")
 
 
